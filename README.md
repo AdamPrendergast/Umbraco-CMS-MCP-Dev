@@ -129,6 +129,7 @@ Add the following to the config file and update the env variables.
       "command": "npx", 
       "args": ["@umbraco-cms/mcp-dev@beta"],
       "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0", // Needed if using https
         "UMBRACO_CLIENT_ID": "<API user name>",
         "UMBRACO_CLIENT_SECRET": "<API client secret>",
         "UMBRACO_BASE_URL": "https://<domain>",
